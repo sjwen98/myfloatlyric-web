@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>myFloatLyric — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""> myFloatLyric</a>
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="data-deletion.html">Data deletion</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap legal-page">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 2026</p>
+
+  <p>myFloatLyric (悬浮歌词, “the app”) shows the lyrics of the song you are playing in a floating window. The app has <strong>no accounts</strong>, does not ask for your name, email or phone number, and contains <strong>no analytics or tracking SDK</strong>. This policy explains what the app uses, where it goes, and why.</p>
+
+  <h2>Summary</h2>
+  <div class="table-scroll">
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+    <tr><td>Song info of what's playing and what's queued next (title, artist, album, length)</td><td>To look up lyrics</td><td>Lyrics services listed below, and our shared lyrics cache</td></tr>
+    <tr><td>Lyrics the app finds</td><td>To share them with other users</td><td>Shared lyrics cache (only if “Contribute lyrics” is on)</td></tr>
+    <tr><td>Audio of the song (AI transcription only)</td><td>To transcribe lyrics when none are found</td><td><strong>Stays on your phone</strong>, never uploaded or saved</td></tr>
+    <tr><td>Advertising ID and ad interaction data</td><td>To show the home-screen banner ad</td><td>Google AdMob</td></tr>
+    <tr><td>Lyrics cache and settings</td><td>So the app works offline and remembers your choices</td><td><strong>Stays on your phone</strong></td></tr>
+  </table>
+  </div>
+
+  <h2>What's playing (notification access)</h2>
+  <p>Android only lets an app see which music is playing if you grant it <strong>notification access</strong>. The app uses this access solely to read the media playback information of the music apps you enable: title, artist, album, length, playback position, album art, and the upcoming tracks in the player's queue. <strong>It does not read the content of your notifications</strong>, and it ignores music apps you have switched off.</p>
+  <p>To show you a list of players to choose from, the app checks which music apps are installed on your phone. That list stays on your phone.</p>
+
+  <h2>Looking up lyrics</h2>
+  <p>To find lyrics for the current song — and, in advance, for the next few songs in your queue — the app sends the song's title, artist, album and length to these services:</p>
+  <ul>
+    <li><a href="https://lrclib.net" target="_blank" rel="noopener">LRCLIB</a></li>
+    <li><a href="https://music.163.com" target="_blank" rel="noopener">NetEase Cloud Music</a></li>
+    <li><a href="https://y.qq.com" target="_blank" rel="noopener">QQ Music</a></li>
+    <li><a href="https://www.kugou.com" target="_blank" rel="noopener">Kugou</a></li>
+    <li><a href="https://www.kuwo.cn" target="_blank" rel="noopener">Kuwo</a></li>
+  </ul>
+  <p>Like any website you visit, these services also see your device's IP address when the request arrives. Their handling of that data is governed by their own privacy policies. The app does not sign in to any of them.</p>
+
+  <h2>Shared lyrics cache</h2>
+  <p>The app keeps a shared cache of lyrics on <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> so that lyrics found by one user can be reused by others. Before asking the lyrics services, the app looks the song up in this cache.</p>
+  <p>When the setting <strong>“Contribute lyrics to the cloud” (贡献歌词到云端)</strong> is on — it is on by default — lyrics the app finds, including line timings produced by AI alignment, are uploaded to the cache together with the song's title, artist, album and length. <strong>Uploads contain no account, device identifier or other personal information.</strong> You can turn this off at any time in the app's Settings.</p>
+
+  <h2>AI transcription (optional)</h2>
+  <p>When no lyrics can be found, the app can transcribe the song as it plays. This feature is on by default and can be switched off in Settings. Before any audio is captured, Android shows its own dialog asking your permission to record — or, if you choose microphone mode, the microphone permission.</p>
+  <ul>
+    <li>The audio is processed <strong>entirely on your phone</strong> by an offline speech model. It is <strong>never uploaded and never saved</strong>.</li>
+    <li>The transcribed text is shown in the app and is not uploaded. When the app uses transcription to add timings to lyrics it already has, those timings are saved with the lyrics and may be shared as described under “Shared lyrics cache”.</li>
+    <li>The speech model is downloaded once, when you first use the feature, from <a href="https://huggingface.co" target="_blank" rel="noopener">Hugging Face</a> (or its mirror hf-mirror.com).</li>
+  </ul>
+
+  <h2>Floating window and notifications</h2>
+  <p>The permission to <strong>display over other apps</strong> is used only to draw the lyrics window. The app shows an ongoing notification while the lyrics window is running, as Android requires, and it asks to be exempt from battery optimization so the window is not closed while music is playing.</p>
+
+  <h2>Advertising</h2>
+  <p>The home screen shows a banner ad from <a href="https://admob.google.com" target="_blank" rel="noopener">Google AdMob</a>. AdMob may collect your device's advertising identifier, IP address and ad interaction data to serve and measure ads. This processing is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. You can reset or delete your advertising identifier in your phone's settings. The floating lyrics window itself shows no ads.</p>
+
+  <h2>Stored on your phone</h2>
+  <p>The following is kept <strong>only on your phone</strong>:</p>
+  <ul>
+    <li>A cache of lyrics already found, and a list of songs recently not found.</li>
+    <li>Your settings: which players are enabled, window position, size, font, lock state and per-song timing offsets.</li>
+    <li>The downloaded speech model, if you used AI transcription.</li>
+  </ul>
+  <p>You can clear this data in the app or by uninstalling it. See <a href="data-deletion.html">Data deletion</a>.</p>
+
+  <h2>Album art</h2>
+  <p>Album art is taken from the music app that is playing. If that app provides an image address on the internet, the image is loaded from that address.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we update this policy, we will revise this page and the “Last updated” date at the top.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions, contact: <a href="mailto:soojw.jm17@gmail.com">soojw.jm17@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 myFloatLyric</span>
+    <span>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="data-deletion.html">Data deletion</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
