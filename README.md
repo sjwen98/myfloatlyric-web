@@ -19,7 +19,7 @@ App 不用 Android App Links，所以没有 `.well-known/assetlinks.json` 和 `v
 - 歌词来源列表：目前是 LRCLIB、网易云、QQ 音乐、酷狗、酷我。Musixmatch / LyricFind 配了 key 才会启用，启用后要加进去。
 - 「贡献歌词到云端」的默认值：目前默认开。
 - AI 听写：目前默认开；音频只在手机上处理，不上传不保存；模型从 Hugging Face 下载。
-- 广告：目前只有首页横幅（AdMob）。
+- 广告：目前只有首页横幅（AdMob），欧洲经济区 / 英国 / 瑞士先经 UMP 征得同意。
 - 加任何统计 / 崩溃上报 SDK（目前没有）。
 
 ## 部署（Vercel）
